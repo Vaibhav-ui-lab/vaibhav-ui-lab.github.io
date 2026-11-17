@@ -650,14 +650,13 @@
       position: absolute;
       top: 1rem;
       right: 1rem;
-      background: rgba(10, 15, 29, 0.7);
       backdrop-filter: blur(8px);
       border: 1px solid var(--border-color);
       padding: 0.25rem 0.65rem;
       border-radius: 999px;
       font-size: 0.75rem;
       font-weight: 600;
-      color: var(--accent-cyan);
+      color: var(--text-main);
     }
     .project-body {
       padding: 1.6rem;
@@ -928,7 +927,7 @@
     <div class="container nav-container">
       <a href="#home" class="nav-brand">
         <i class="fa-solid fa-code" style="color: var(--accent-cyan);"></i>
-        Vaibhav<span>.dev</span>
+        <span>vaibhav.dev</span>
       </a>
 
       <ul class="nav-links" id="navLinks">
@@ -1454,7 +1453,7 @@
     const htmlEl = document.documentElement;
 
     // Check system or saved preference
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     if (savedTheme === 'light') {
       htmlEl.setAttribute('data-theme', 'light');
       themeIcon.classList.replace('fa-moon', 'fa-sun');
